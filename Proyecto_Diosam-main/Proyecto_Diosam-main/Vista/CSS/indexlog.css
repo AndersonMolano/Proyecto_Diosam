@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+  
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+}
+
+.contenedor-imagen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+    
+.Fondo-Index {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-imagen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.titulos {
+    color: white    ;
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.contenedor-logo-texto {
+    display: flex; 
+    align-items: center;
+    margin: 10px;
+    color: white;
+    position: absolute;
+    margin-left: 30px;
+    z-index: 3;
+}
+
+.logo {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+}
+
+.texto {
+    margin-left: 10px; 
+    font-size: 40px;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    text-shadow: red -1px -1px;
+}
+.contenido ul{
+    margin-top: 2%;
+    margin-left: 65%;
+    display: flex;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+}
+.contenido li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea la lista a la derecha */
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    list-style-type: none; /* Quita los puntos predeterminados en las etiquetas li */
+    padding: 5px; /* Quita el relleno predeterminado de la lista */
+    margin: 5px; /* Quita el margen predeterminado de la lista */
+}
+
+a {
+    background-color: transparent; /* Fondo transparente */
+    font-size: 20px;
+    font-family: arial;
+    color: #ffffff; /* Rojo más brillante */
+    text-decoration: none; /* Sin subrayado predeterminado */
+    border: 2px solid #FF0000; /* Borde del enlace */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+a:hover {
+    background-color: #FF0000; /* Fondo rojo al pasar el ratón */
+    color: #FFFFFF; /* Texto blanco al pasar el ratón */
+    border-color: #FFFFFF; /* Borde blanco al pasar el ratón */
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 24%;
+}
+
+.cards .card {
+    margin-right: 95px; /* Añade un margen derecho */
+}
+
+/* Elimina el margen derecho de la última tarjeta */
+.cards .card:last-child {
+    margin-right: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Mantén la proporción de la imagen */
+}
+.card-title{
+    color: #a90000;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 65%;
+    width: 30%;
+    height: 50%;
+    z-index: 1000; /* Coloca la ventana modal en la parte superior */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 20%; /* Ajusta el valor según la posición vertical deseada */
+    right: 20px; /* Coloca la ventana en la esquina derecha */
+    width: 30%;
+    height: 50%;
+    z-index: 1000; /* Coloca la ventana modal en la parte superior */
+    /* No es necesario justify-content y align-items para este diseño */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    animation: scaleIn 0.3s ease-in-out; /* Agrega una animación de entrada */
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 34px;
+    color: #ff0000;
+}
+
+/* Estilos para la imagen del usuario */
+.user_logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+/* Estilos para el correo electrónico y el nombre */
+.email{
+    font-size: 20px;
+}
+.nombre {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Animación de entrada */
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+

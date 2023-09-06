@@ -1,0 +1,133 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background-size: cover;
+    background-image: url(../IMG/3225.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  img {
+    border-radius: 10pc;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .contenedor-logo-texto {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    margin-left: 10px;
+    z-index: 3;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .texto {
+    margin-right: 23pc;
+    font-size: 40px;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    text-shadow: 2px 2px red;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .contenido ul {
+    margin-top: -4%;
+    margin-left: 65%;
+    display: flex;
+    font-size: medium;
+    font-family: 'Lobster Two', cursive;
+    list-style-type: none;
+  }
+  
+  .contenido li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 16px;
+    font-family: arial;
+    padding: 5px;
+    margin: 2px;
+  }
+
+  a[href="DOCS/login.html"] {
+    background-color: transparent;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #FF0000;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  a[href="DOCS/login.html"]:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+  .nav {
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: #FF0000;
+    font-size: 20px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Agregar esta propiedad para centrar verticalmente */
+    text-align: center;
+    position: absolute;
+    top: 30pc;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Mueve al centro exacto */
+}
+
+.cards .card {
+    margin-right: 20px; /* Añade un margen derecho entre las cards */
+}
+
+/* Elimina el margen derecho de la última tarjeta */
+.cards .card:last-child {
+    margin-right: 0;
+}
+
+.card-img-top {
+    /* Ajusta el tamaño de las imágenes según tus necesidades */
+    width: 100%;
+    height: auto; /* Mantén la proporción de la imagen */
+}
+.card-title{
+    color: #a90000;
+}
